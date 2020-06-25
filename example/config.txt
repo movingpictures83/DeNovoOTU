@@ -1,0 +1,2 @@
+Prefix plugins/DeNovoOTU/example
+Plugin DeNovoOTU inputfile seqs.fna outputfile output
