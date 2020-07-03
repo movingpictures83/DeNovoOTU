@@ -2,7 +2,8 @@
 # Language: C++
 # Input: FNA
 # Output: DIR
-# Tested with: PluMA 1.0, GCC 4.8.4
+# Tested with: PluMA 1.1, GCC 4.8.4
+# Dependency: Qiime 1.9.1, Python 2.7
 
 Group a set of sequences into OTUs using de novo clustering (Caporaso et al, 2010).
 
