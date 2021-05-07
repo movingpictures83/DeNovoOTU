@@ -12,9 +12,9 @@ void DeNovoOTUPlugin::run() {
 }
 
 void DeNovoOTUPlugin::output(std::string file) {
-   std::string command = "export OLDPATH=${PYTHONPATH}; export PYTHONPATH=${PYTHON2_LIB_DIR}:${PYTHON2_DIST_PACKAGES}:${PYTHON2_SITE_PACKAGES}:${PYTHONPATH}; rm -rf "+file+"; pick_de_novo_otus.py";
+   std::string command = /*"export OLDPATH=${PYTHONPATH}; export PYTHONPATH=${PYTHON2_LIB_DIR}:${PYTHON2_DIST_PACKAGES}:${PYTHON2_SITE_PACKAGES}:${PYTHONPATH}; */"rm -rf "+file+"; pick_de_novo_otus.py";
  command += " -i "+inputfile;
- command += " -o "+file+"; cp -r "+file+"/* "+file+"/..; export PYTHONPATH=OLDPATH"; 
+ command += " -o "+file+"; cp -r "+file+"/* "+file+"/..";//; export PYTHONPATH=OLDPATH"; 
  std::cout << command << std::endl;
 
  system(command.c_str());
